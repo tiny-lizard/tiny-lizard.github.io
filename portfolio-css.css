@@ -37,7 +37,7 @@ body, html {
     color: #f2f2f2;
     text-align: center;
     text-decoration: none;
-    font-size: 20pt;
+    font-size: 1rem;
     padding: 100% 5% 100% 5%;
 }
   
@@ -51,7 +51,7 @@ body, html {
     background: url("images/heroimage.png");
     width: 100%;
     height: 100%;
-    min-height: 50%;
+    min-height: 30%;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -61,27 +61,34 @@ body, html {
     background-blend-mode: overlay;
 }
 
-.landing-title-position {
-    overflow: visible;
+#landing-title-subtitle-wrapper{
+    /*positioning*/
+    overflow: clip;
     position: absolute;
     left: 10%;
     top: 21%;
+
+    /*content organization*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: -1rem;
+
+
 }
 
 .landing-title-text {
     font-family: "Sue Ellen Francisco", cursive;
-    font-size: 120pt;
+    font-size: clamp(60pt,120pt,120pt);
     font-weight: 400;
     font-style: normal;
     color: rgb(228, 228, 228);
     word-spacing: -15pt;
+    margin-bottom: -4rem;
 }
 
 .landing-subtitle-position {
-    position: absolute;
-    left: 17.5%;
-    top: 45%;
-    padding-bottom: -10%;
+    margin: 0;
 }
 
 .landing-subtitle-text {
@@ -131,11 +138,11 @@ body, html {
 
 #about {
     background: rgb(252, 227, 101);
-    min-height:50%;
+    min-height:30%;
     height: auto;
     width: 100%;
     padding-top: 5pt;
-    padding-bottom: 5pt;
+    padding-bottom: 50pt;
     display: flex;
     flex-direction: column;
     justify-content: stretch;
@@ -166,7 +173,7 @@ body, html {
 #contact {
     padding-top: 12pt;
     padding-bottom: 12pt;
-    min-height:45%;
+    min-height:30%;
     height: auto;
     width: 100%;
     background: rgb(255, 255, 255);
