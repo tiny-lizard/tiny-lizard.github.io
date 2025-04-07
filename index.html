@@ -1,66 +1,293 @@
-<html>
-    <head>
-        <title>ali nadine art</title>
-        <link rel="stylesheet" href="portfolio-css.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Sue+Ellen+Francisco&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Sofia+Sans+Extra+Condensed:ital@0;1&display=swap" rel="stylesheet">
-    </head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ali nadine art</title>
+    <link rel="stylesheet" href="portfolio-css.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@100..900&family=Just+Me+Again+Down+Here&display=swap" rel="stylesheet">
 
-    <body>
-        <section id="topnav">
-            <div>
-                <a href="#gallery">works</a>
-                <a href="#about">about</a>
-                <a href="#contact">contact</a>
-            </div>  
-        </section>
-        <section id="landing">
-            <div id="landing-title-subtitle-wrapper">
-                <div class="landing-title-text">ali nadine art</div>
-                <div class="landing-subtitle-text landing-subtitle-position">fantasy illustration</div>
-            </div>
-        </section>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-container">
+            <a href="#" class="logo">Ali Nadine</a>
+            <ul class="nav-links">
+                <li><a href="#gallery">works</a></li>
+                <li><a href="#about">about</a></li>
+                <li><a href="#contact">contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Image Section -->
+    <div class="hero-container">
+        <img class="hero-image" src="images/heroimage.png" alt="Artist's Featured Work">
+        <div class="hero-overlay">
+            <h1 class="hero-title">ali nadine art</h1>
+            <p class="hero-description">fantasy illustration</p>
+        </div>
+    </div>
+    
+    <div class="container">
+        <!-- Gallery Section -->
         <section id="gallery">
-            <h1 class="section-header-text">works</h1>
-            <div class="gallery-item"><img src="images/gallery/samples/Azra-Portrait.jpg"></div>
-            <div class="gallery-item"><img src="images/gallery/samples/20241004-Oswell-Final.jpg"></div>
-            <div class="gallery-item"><img src="images/gallery/samples/Sen-Portrait.png"></div>
-            <div class="gallery-item"><img src="images/gallery/samples/Sharokh.jpg"></div>
-            <div class="gallery-item"><img src="images/gallery/samples/comitia_127_postcard.jpg"></div>
-            <div class="gallery-item"><img src="images/gallery/samples/WitchyShenanigans.png"></div>
-            <div class="gallery-item"><img src="images/gallery/samples/Vigilantes.png"></div>
-            <div class="gallery-item"><img src="images/gallery/samples/AkashaAndKrius.png"></div>
-            <div class="gallery-item"><img src="images/gallery/samples/VolcanicEnvironment.png"></div>
-            <div class="gallery-item"><img src="images/gallery/samples/InTheDark.png"></div>
-            <div class="gallery-item"><img src="images/gallery/samples/TheresAlwaysSomethingBigger.jpg"></div>
-            <div class="gallery-item"><img src="images/gallery/samples/HeightsFolioCover.jpg"></div>
-        </section>
-        <section id="about">
-            <h1 class="section-header-text">about</h1>
-            <div class="about-subsection">
-                <div><img src="images/socialmedia/about.jpg"></div>
-                <div><p>Ali grew up in Manila where she learned patience by sitting in traffic jams and survived socializing with passable Tagalog. 
-                She graduated with a Computer Science degree from Ateneo de Manila University, where she had begun her dual life of juggling tech by day and art in her free time.
-                She now lives in Tokyo where she works as a systems engineer and moonlights as a visual artist.</p></div>
+            <header class="section-header">
+                <h2>Works</h2>
+                <p>Click on the filters to see the relevant artwork for that category.</p>
+            </header>
+            
+            <div class="gallery-filter">
+                <button class="filter-button active" data-filter="all">All</button>
+                <button class="filter-button" data-filter="commissions">professional</button>
+                <button class="filter-button" data-filter="publications">publications</button>
+                <button class="filter-button" data-filter="personal">personal</button>
             </div>
-        </section>
-        <section id="contact">
-            <div>
-                <h1 class="section-header-text">contact</h1>
-            </div>
-            <div>
-                    If you would like to collaborate or commission a work of art, please message me at:
-                    <div><a href="mailto:ali.timonera@gmail.com"><img src="images/socialmedia/icons8-email-96.png"></a>ali.timonera@gmail.com</div>
-                    <br/>
-                    (Rather outdated) Social Media
-                    <div>
-                        <a href="https://www.instagram.com/alinadineart/"><img src="images/socialmedia/icons8-instagram-96.png"></a>
-                        <a href="https://www.deviantart.com/0anacondaq0"><img src="images/socialmedia/icons8-deviantart-96.png"></a>
-                        <a href="https://alinadineart.tumblr.com/"><img src="images/socialmedia/icons8-tumblr-96.png"></a>
+            
+            <div class="gallery-grid">
+                <!-- Gallery Item 1 -->
+                <div class="gallery-item" data-category="commissions">
+                    <img src="images/gallery/samples/Azra-Portrait.jpg" alt="Azra">
+                    <div class="gallery-item-info">
+                        <h3 class="gallery-item-title">Azra</h3>
+                        <p class="gallery-item-description">Character portrait for the Gema Campaign, a Pathfinder game</p>
                     </div>
+                </div>
+                
+                <!-- Gallery Item 2 -->
+                <div class="gallery-item" data-category="commissions">
+                    <img src="images/gallery/samples/20241004-Oswell-Final.jpg" alt="Oswell">
+                    <div class="gallery-item-info">
+                        <h3 class="gallery-item-title">Oswell</h3>
+                        <p class="gallery-item-description">Character portrait for the Gema Campaign, a Pathfinder game</p>
+                    </div>
+                </div>
+                
+                <!-- Gallery Item 3 -->
+                <div class="gallery-item" data-category="commissions">
+                    <img src="images/gallery/samples/Sen-Portrait.png" alt="Sen">
+                    <div class="gallery-item-info">
+                        <h3 class="gallery-item-title">Sen</h3>
+                        <p class="gallery-item-description">Character portrait for the Gema Campaign, a Pathfinder game</p>
+                    </div>
+                </div>
+                
+                <!-- Gallery Item 4 -->
+                <div class="gallery-item" data-category="personal">
+                    <img src="images/gallery/samples/Sharokh.jpg" alt="Sharokh">
+                    <div class="gallery-item-info">
+                        <h3 class="gallery-item-title">Sharokh</h3>
+                        <p class="gallery-item-description">My Dragonborn Barbarian for a D&D 5E campaign</p>
+                    </div>
+                </div>
+                
+                <!-- Gallery Item 5 -->
+                <div class="gallery-item" data-category="personal">
+                    <img src="images/gallery/samples/comitia_127_postcard.jpg" alt="Swan and Duck">
+                    <div class="gallery-item-info">
+                        <h3 class="gallery-item-title">Swan and Duck</h3>
+                        <p class="gallery-item-description">Illustration of OCs</p>
+                    </div>
+                </div>
+                
+                <!-- Gallery Item 6 -->
+                <div class="gallery-item" data-category="personal">
+                    <img src="images/gallery/samples/WitchyShenanigans.png" alt="Witchy Shenangigans">
+                    <div class="gallery-item-info">
+                        <h3 class="gallery-item-title">Witchy Shenanigans</h3>
+                        <p class="gallery-item-description">Illustration for a Guild Reverie art zine</p>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 7 -->
+                <div class="gallery-item" data-category="publications">
+                    <img src="images/gallery/samples/Vigilantes.png" alt="Vigilantes">
+                    <div class="gallery-item-info">
+                        <h3 class="gallery-item-title">Vigilantes</h3>
+                        <p class="gallery-item-description">Illustration published in the 2014-2015 Ateneo Heights Writers' Workshop</p>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 8 -->
+                <div class="gallery-item" data-category="personal">
+                    <img src="images/gallery/samples/AkashaAndKrius.png" alt="Akasha and Krius">
+                    <div class="gallery-item-info">
+                        <h3 class="gallery-item-title">Akasha and Krius</h3>
+                        <p class="gallery-item-description">Gift art of my best friend's and my OCs for her birthday.</p>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 9 -->
+                <div class="gallery-item" data-category="commissions">
+                    <img src="images/gallery/samples/VolcanicEnvironment.png" alt="Volcanic Environment">
+                    <div class="gallery-item-info">
+                        <h3 class="gallery-item-title">Volcanic Environment</h3>
+                        <p class="gallery-item-description">Visual development for an unnannounced video game project (Anino Games)</p>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 10 -->
+                <div class="gallery-item" data-category="personal">
+                    <img src="images/gallery/samples/InTheDark.png" alt="In the Dark">
+                    <div class="gallery-item-info">
+                        <h3 class="gallery-item-title">In the Dark</h3>
+                        <p class="gallery-item-description">Personal Illustration</p>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 11 -->
+                <div class="gallery-item" data-category="publications">
+                    <img src="images/gallery/samples/TheresAlwaysSomethingBigger.jpg" alt="There's Always Something Bigger">
+                    <div class="gallery-item-info">
+                        <h3 class="gallery-item-title">There's Always Something Bigger</h3>
+                        <p class="gallery-item-description">Illustration published in the Ateneo Heights Regular Folio Vol. 60 No. 3 and Seniors Folio Vol. 62 No. 4.</p>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 12 -->
+                <div class="gallery-item" data-category="publications">
+                    <img src="images/gallery/samples/HeightsFolioCover.jpg" alt="Heights Vol.60 No.1 Cover Illustration">
+                    <div class="gallery-item-info">
+                        <h3 class="gallery-item-title">Heights Vol.60 No.1 Cover Illustration</h3>
+                        <p class="gallery-item-description">Book cover art for the Ateneo Heights Regular Folio Vol. 60 No. 1 </p>
+                    </div>
+                </div>
             </div>
         </section>
-    </body>
-    </html>
+        
+        <!-- About Section -->
+        <section id="about">
+            <header class="section-header">
+                <h2>About</h2>
+            </header>
+            
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="images/socialmedia/about.jpg" alt="Artist Portrait" style="border: 1rem solid #f2f2f2 ;">
+                </div>
+                <div class="about-text">
+                    <p>
+                        Ali grew up in Manila where she learned patience by sitting in traffic jams and survived socializing with passable Tagalog. 
+                        She graduated with a Computer Science degree from Ateneo de Manila University, where she had begun her dual life of juggling tech by day and art in her free time. 
+                        She now lives in Tokyo where she works as a systems engineer and moonlights as a visual artist.
+                    </p>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Contact Section -->
+        <section id="contact">
+            <header class="section-header">
+                <h2>Contact</h2>
+                <p>If you would like to collaborate or commission a work of art, please contact me at: </p>
+            </header>
+            
+            <div class="contact-content">
+                <div class="contact-email">
+                    <a href="mailto:artist@example.com">alinadine.art@gmail.com</a>
+                </div>
+                
+                <div class="social-links">
+                    <a href="https://www.deviantart.com/0anacondaq0" target="_blank" class="social-link">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M19.207 4.794l.23-.43V0H15.07l-.436.44-2.058 3.925-.646.436H4.58v5.993h4.04l.36.436-4.175 7.98-.225.43V24H8.93l.436-.44 2.07-3.925.644-.436h7.35v-5.993h-4.05l-.36-.438 4.186-7.977z" fill="currentColor"/>
+                        </svg>
+                    </a>
+                    <a href="https://www.instagram.com/alinadineart/" target="_blank" class="social-link">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" fill="currentColor"/>
+                        </svg>
+                    </a>
+                    <a href="https://alinadineart.tumblr.com/" target="_blank" class="social-link">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M14.563 24c-5.093 0-7.031-3.756-7.031-6.411V9.747H5.116V6.648c3.63-1.313 4.512-4.596 4.71-6.469C9.84.069 9.941 0 9.999 0h3.517v6.114h4.801v3.633h-4.82v7.47c.016 1.001.375 2.371 2.207 2.371h.09c.631-.02 1.486-.205 1.936-.419l1.156 3.425c-.436.636-2.4 1.374-4.156 1.404h-.167V24h-.001z" fill="currentColor"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </div>
+    
+    <!-- Modal for enlarged view -->
+    <div class="modal" id="imageModal">
+        <span class="close-modal">&times;</span>
+        <div class="modal-content">
+            <img id="modalImage" src="" alt="Enlarged artwork">
+            <div class="modal-caption">
+                <h3 id="modalTitle"></h3>
+                <p id="modalDescription"></p>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        // JavaScript for filtering and modal functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            // Filter functionality
+            const filterButtons = document.querySelectorAll('.filter-button');
+            const galleryItems = document.querySelectorAll('.gallery-item');
+            
+            filterButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    const filterValue = this.getAttribute('data-filter');
+                    
+                    // Update active button
+                    filterButtons.forEach(btn => btn.classList.remove('active'));
+                    this.classList.add('active');
+                    
+                    // Filter gallery items
+                    galleryItems.forEach(item => {
+                        if (filterValue === 'all' || item.getAttribute('data-category') === filterValue) {
+                            item.style.display = 'block';
+                        } else {
+                            item.style.display = 'none';
+                        }
+                    });
+                });
+            });
+            
+            // Modal functionality
+            const modal = document.getElementById('imageModal');
+            const modalImg = document.getElementById('modalImage');
+            const modalTitle = document.getElementById('modalTitle');
+            const modalDescription = document.getElementById('modalDescription');
+            const closeModal = document.querySelector('.close-modal');
+            
+            galleryItems.forEach(item => {
+                item.addEventListener('click', function() {
+                    modal.style.display = 'flex';
+                    modalImg.src = this.querySelector('img').src;
+                    modalTitle.textContent = this.querySelector('.gallery-item-title').textContent;
+                    modalDescription.textContent = this.querySelector('.gallery-item-description').textContent;
+                });
+            });
+            
+            closeModal.addEventListener('click', function() {
+                modal.style.display = 'none';
+            });
+            
+            window.addEventListener('click', function(event) {
+                if (event.target === modal) {
+                    modal.style.display = 'none';
+                }
+            });
+            
+            // Smooth scrolling for navigation links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const targetId = this.getAttribute('href');
+                    if (targetId !== '#') {
+                        document.querySelector(targetId).scrollIntoView({
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
